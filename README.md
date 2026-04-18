@@ -1,1 +1,2 @@
-I've pushed all my assigned tasks for the "Mobile Application Development" course into this repository. To view specific tasks (e.g., Assignment_1, Mid_Project) you can switch the branch from main to the required one.
+All tasks assigned in the " Mobile Application Development " course have been pushed to this repository. To view a specific task (such as Assignment_1 or Mid_Project), simply switch the branch from main to the corresponding branch.
+
