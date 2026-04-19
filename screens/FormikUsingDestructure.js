@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  StyleSheet,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
@@ -57,9 +51,7 @@ export default function App() {
               <Text style={styles.error}>{errors.email}</Text>
             )}
 
-            <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-              <Text style={styles.buttonText}>Submit</Text>
-            </TouchableOpacity>
+            <Button title="Submit" onPress={handleSubmit} />
           </View>
         )}
       </Formik>
@@ -72,14 +64,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#435b68",
   },
 
   form: {
     width: "80%",
-    backgroundColor: "#e3ecf4",
-    padding: 20,
-    borderRadius: 10,
   },
 
   input: {
@@ -88,25 +76,10 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     borderRadius: 5,
-    backgroundColor: "white",
   },
 
   error: {
     color: "red",
     marginBottom: 10,
-  },
-
-  button: {
-    backgroundColor: "#4CAF50",
-    paddingVertical: 12,
-    borderRadius: 8,
-    alignItems: "center",
-    marginTop: 10,
-  },
-
-  buttonText: {
-    color: "white",
-    fontSize: 16,
-    fontWeight: "bold",
   },
 });
